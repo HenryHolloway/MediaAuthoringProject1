@@ -46,7 +46,7 @@ function fauxTerm(config) {
   }
 
   function chdir(argv, argc) {
-    if(argc === 1 || argc > 2) { return "Failure. Select a single directory to move to.\n"; }
+    if(argc === 1) { return "Failure. Select a directory to move to.\n"; }
 
     if(argv[1] === "..") {
       if(currDir === "home-") { return "Already in home directory.\n" }
@@ -62,11 +62,20 @@ function fauxTerm(config) {
         return currDir + '\n';
       }
     }
+    
     //else if(!fileExists(currDir + argv[1])) { return "Failure. Directory does not exist\n"; }
     extension = argv[1].split(".");
     extension = extension[extension.length-1];
     if(extension === "txt") { return "Failure. Not a directory.\n" }
-
+    else if(argv[1] === ".hidden-") {
+      if(argv[2] === "" || !argv[2]) {
+        return "Directory is encrypted. Must include password as second argument.\n";
+      }
+      else if(argv[2] === "1ZQ0wpH#zm") {
+        currDir += argv[1];
+        return currDir + '\n';
+      }
+    }
     else {
       currDir += argv[1];
       return currDir + '\n';
