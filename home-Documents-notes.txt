@@ -1,0 +1,22 @@
+ Meeting Notes October 20, 2002
+ Tardy: Stephanie
+
+Tasks:
+
+    Accomplished:
+        1. SRS
+
+        Intro
+	        Functional and nonfunctional requirements
+		Data Model - 2nd draft
+	        Data Dictionary(half done)
+
+    Unfinished
+            1. Data model final draft
+	    2. Josh's half of the data dictionary
+            3. Proofs of concepts
+	    4. presentable UI Prototype
+
+Problems: none
+
+Schedule updates: none 

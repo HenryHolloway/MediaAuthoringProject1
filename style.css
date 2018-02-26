@@ -1,0 +1,159 @@
+a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color:white;
+    display: inline-block;
+    width:100%;
+    text-align: center;
+}
+a:hover {
+    color:lightslategray;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color:white;
+    display: inline-block;
+    width:100%;
+    
+    text-align: center;
+}
+
+
+
+#title {
+    font-size: 24px !important;
+    width:200px !important;
+    border: 2px solid gray ;
+    color: gray;
+}
+
+.innerBox {
+    border: 2px solid gray;
+    background:black;
+    width: 95%;
+    height: 600px; 
+    margin: 0 auto;
+    overflow: hidden;
+}
+.outerBox {
+    background:black;
+    border: 3px solid gray;
+    display: inline-block;
+    text-align: center; 
+    width: 1000px;
+    height: 700px;
+}
+
+.body {
+    text-align: center;
+    background: white;
+}    
+
+/* Faux-term styling */
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .faux-input {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    width: 0px;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    opacity: 0;
+  }
+  
+  .term {
+    background: #000;
+    width: 103%;
+    height: 100%;
+    color: #aaa;
+    font-family: FreeMono, monospace;
+    font-weight: 400;
+    -webkit-font-smoothing : none;
+    font-size: 18pt;
+    padding: 3px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    display: block;
+    line-height: 1.2em;
+    overflow-y: scroll;
+    position: relative;
+    color: #888;
+  }
+  
+  .term-focus {
+    text-shadow: none;
+    color: #ccc;
+  }
+  
+  .term .red {
+    color: red;
+  }
+  .term .blue {
+    color: blue;
+  }
+  .term .white {
+    color: #fff;
+  }
+  .term .bold {
+    font-weight: bold;
+  }
+  
+  .bell {
+    width: 0.1em;
+    height: 1.1em;
+    line-height: 1.2em;
+    background: #fff;
+    position: absolute;
+    animation: flash 1s infinite;
+  }
+  
+  @keyframes flash {
+    0% {
+      visibility: visible;
+    }
+    49% {
+      visibility: visible;
+    }
+    50% {
+      visibility: hidden;
+    }
+    99% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  
+  /* Let's get this party started */
+  ::-webkit-scrollbar {
+      width: 0px;
+  }
+   
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+   
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #111;
+  }
